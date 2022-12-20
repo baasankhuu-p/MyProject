@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+/* :root {
+    --default-color: #ff5000;
+    --default-hover-color: #e64800;
+    --default-scroll-color: #fc5130;
+    --default-font-famile: 'Source Sans Pro', sans-serif;
+} */
+
+:root {
+    --default-color: #ad20ff;
+    --default-hover-color: #8c21cb;
+    --default-scroll-color: #a000ff;
+    --default-background-color: rgba(160, 0, 255, 0.1);
+    --default-font-famile: 'Source Sans Pro', sans-serif;
+}
