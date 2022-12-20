@@ -185,7 +185,7 @@ p {
   }
 
   section {
-    background-color: var(--default-color) !important;
+    background-color: var(--default-background-color) !important;
   }
 
   body {
