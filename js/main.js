@@ -435,17 +435,21 @@ function fotor_contactForm() {
             return regexp.test(String(email).toLowerCase());
         }
 
+        function validatePhone(phone) {
+            var regexp = '';
+            return false;
+        }
         //  Variables 
         var $this = $(this),
             $formActionURL = $this.attr("action"),
             name = $("#contactName").val().trim(),
             email = $("#contactEmail").val().trim(),
-            subject = $("#contactSubject").val().trim(),
+            phone = $("#contactPhone").val().trim(),
             message = $("#contactMessage").val().trim(),
-            validateEmail = validateEmail(email);
-
+            validateEmail = validateEmail(email),
+            validatePhone = validatePhone(phone);
         // Check empty fields
-        if (name === '' || email === '' || message === '' || subject === '') {
+        if (name === '' || email === '' || message === '' || phone === '') {
             if ($('div.empty-form').css("display") == "none") {
                 $('div.empty-form').stop().slideDown(500).delay(2000).slideUp(500);
             } else {
@@ -457,7 +461,16 @@ function fotor_contactForm() {
             } else {
                 return false;
             }
-        } else {
+        }
+        else if (!validatePhone === true) {
+            if ($('div.phone-invalid').css("display") == "none") {
+                $('div.phone-invalid').stop().slideDown(500).delay(2000).slideUp(500);
+            } else {
+                return false;
+            }
+        }
+
+        else {
             // Once the information entered is verified, the mail form is sent. 
             $this.find(':submit').append('<span class="fas fa-spinner fa-pulse ml-3"></span>');
             $("#contactForm").find(':submit').attr('disabled', 'true');
@@ -484,4 +497,7 @@ function fotor_contactForm() {
 }
 function toggleLike() {
     /**Like Count set */
+}
+function SendRequest(name, email) {
+    alert(`Сайн уу ${name}. Бид таны мэдээлэлтэй танилцаж удахгүй ${email} имейл-рүү хариу илгээх болно`);
 }

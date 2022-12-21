@@ -1944,6 +1944,7 @@ h1 .typed-cursor {
 
 .contact-content .contact-form .empty-form span,
 .contact-content .contact-form .email-invalid span,
+.contact-content .contact-form .phone-invalid span,
 .contact-content .contact-form .success-form span {
   display: block;
   padding: 17px 20px;
@@ -1952,7 +1953,8 @@ h1 .typed-cursor {
 }
 
 .contact-content .contact-form .empty-form span,
-.contact-content .contact-form .email-invalid span {
+.contact-content .contact-form .email-invalid span,
+.contact-content .contact-form .phone-invalid span {
   color: #721c24;
   background: #f8d7da;
 }
