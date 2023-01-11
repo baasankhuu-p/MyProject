@@ -1,19 +1,19 @@
 /* -------------------------------------------------------------------
-   Base                               
+   Base 
    ------------------------ /
  * 01.Base
  * 02.Typography
  * 03.Helper Class
    ------------------------ /
-   Components                               
+   Components
    ------------------------ /
- * 04.Buttons  
- * 05.Animations 
+ * 04.Buttons
+ * 05.Animations
  * 06.Form(Input, Comment)
  * 07.Pagination 
  * 08.Preloader
    ------------------------ /
-   Layout                               
+   Layout 
    ------------------------ /
  * 09.Header
  * 10.Hero
@@ -29,21 +29,20 @@
  * 20.Footer
  * 21.Breadcrumb
    ------------------------ /
-   Home Pages                              
+   Home Pages
    ------------------------ /
  * 22.Home Slider
  * 23.Home Page Youtube Video
  * 24.Home Particles
  * 25.Home Glitch Img 
    ------------------------ /
-   Inner Pages                              
+   Inner Pages
    ------------------------ /
  * 26.Portfolio Details
  * 27.Blog Single  
  * 28.Intro 
-
 ------------------------------------------------------------------- */
-/* 01.Base                               
+/* 01.Base 
 /* ---------------------------------------------------------------- */
 @import url(./const.css);
 
@@ -119,7 +118,7 @@ button:focus {
 }
 
 /* ---------------------------------------------------------------- */
-/* 02.Typography                               
+/* 02.Typography 
 /* ---------------------------------------------------------------- */
 h1,
 h2,
@@ -194,7 +193,7 @@ p {
 }
 
 /* ---------------------------------------------------------------- */
-/* 03.Helper Class                              
+/* 03.Helper Class
 /* ---------------------------------------------------------------- */
 .page-wrapper {
   overflow: hidden;
@@ -298,6 +297,11 @@ p {
   background: #050629;
 }
 
+.bg-color,
+.navbar-color {
+  background-color: var(--default-color-blur) !important;
+}
+
 .owl-carousel .owl-item img {
   width: auto;
   display: inline-block;
@@ -322,7 +326,7 @@ p {
 }
 
 /* ---------------------------------------------------------------- */
-/* 04.Buttons                                                     
+/* 04.Buttons   
 /* ---------------------------------------------------------------- */
 .default-orange-btn {
   color: #fff;
@@ -401,7 +405,7 @@ p {
 }
 
 /* ---------------------------------------------------------------- */
-/* 05.Animations                                                     
+/* 05.Animations   
 /* ---------------------------------------------------------------- */
 @-webkit-keyframes stickyMenu {
   0% {
@@ -530,7 +534,7 @@ p {
 }
 
 /* ---------------------------------------------------------------- */
-/* 06.Form(Input, Comment)                             
+/* 06.Form(Input, Comment)    
 /* ---------------------------------------------------------------- */
 .comment-form-group {
   margin-bottom: 30px;
@@ -602,7 +606,7 @@ p {
 }
 
 /* ---------------------------------------------------------------- */
-/* 07.Pagination                              
+/* 07.Pagination
 /* ---------------------------------------------------------------- */
 .pagination-wrap {
   margin-top: 30px;
@@ -635,7 +639,7 @@ p {
 }
 
 /* ---------------------------------------------------------------- */
-/* 08.Preloader                            
+/* 08.Preloader   
 /* ---------------------------------------------------------------- */
 #preloader {
   top: 0;
@@ -691,7 +695,7 @@ p {
 }
 
 /* ---------------------------------------------------------------- */
-/* 09.Header                                                   
+/* 09.Header 
 /* ---------------------------------------------------------------- */
 .header {
   padding: 10px 0;
@@ -979,7 +983,7 @@ p {
 }
 
 /* ---------------------------------------------------------------- */
-/* 10.Hero                                                    
+/* 10.Hero  
 /* ---------------------------------------------------------------- */
 .hero-banner {
   position: relative;
@@ -1199,6 +1203,8 @@ h1 .typed-cursor {
 /* Small devices (landscape phones, less than 768px)
 /* ---------------------------------------------------------------- */
 @media only screen and (max-width: 767.98px) {
+
+
   .hero-banner .button-group-center {
     display: none;
   }
@@ -1209,7 +1215,7 @@ h1 .typed-cursor {
 }
 
 /* ---------------------------------------------------------------- */
-/* 11.Experience                            
+/* 11.Experience   
 /* ---------------------------------------------------------------- */
 .experience-item {
   padding: 30px;
@@ -1383,7 +1389,7 @@ h1 .typed-cursor {
 }
 
 /* ---------------------------------------------------------------- */
-/* 12.Counters                            
+/* 12.Counters   
 /* ---------------------------------------------------------------- */
 .counters-item {
   padding: 30px;
@@ -1434,7 +1440,7 @@ h1 .typed-cursor {
 }
 
 /* ---------------------------------------------------------------- */
-/* 13.Services                                                    
+/* 13.Services  
 /* ---------------------------------------------------------------- */
 .services-box {
   padding: 30px;
@@ -1489,7 +1495,7 @@ h1 .typed-cursor {
 }
 
 /* ---------------------------------------------------------------- */
-/* 14.Portfolio                                                     
+/* 14.Portfolio   
 /* ---------------------------------------------------------------- */
 .portfolio-filter {
   text-align: center;
@@ -1633,6 +1639,7 @@ h1 .typed-cursor {
 /* Small devices (landscape phones, less than 768px)
 /* ---------------------------------------------------------------- */
 @media only screen and (max-width: 767.98px) {
+
   .portfolio-filter {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1688,7 +1695,7 @@ h1 .typed-cursor {
 }
 
 /* ---------------------------------------------------------------- */
-/* 16.Team                                                    
+/* 16.Team  
 /* ---------------------------------------------------------------- */
 .team-card {
   position: relative;
@@ -1748,7 +1755,7 @@ h1 .typed-cursor {
 }
 
 /* ---------------------------------------------------------------- */
-/* 17.Pricing                           
+/* 17.Pricing  
 /* ---------------------------------------------------------------- */
 .price-table {
   padding: 30px;
@@ -1812,7 +1819,7 @@ h1 .typed-cursor {
 }
 
 /* ---------------------------------------------------------------- */
-/* 18.Latest Blog                              
+/* 18.Latest Blog
 /* ---------------------------------------------------------------- */
 .blog-item {
   background: var(--default-background-color);
@@ -1829,13 +1836,15 @@ h1 .typed-cursor {
   box-shadow: 0 23px 49px 0 rgba(0, 0, 0, 0.1);
 }
 
-.blog-item .blog-top {
+.blog-item .blog-top,
+.blog-top {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
 }
 
-.blog-item .blog-top img {
+.blog-item .blog-top img,
+.blog-top img {
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -1843,42 +1852,57 @@ h1 .typed-cursor {
   transition: all 0.25s linear;
 }
 
-.blog-item .blog-top img:hover {
+.blog-top img {
+  width: 50%;
+}
+
+.blog-item .blog-top img:hover,
+.blog-top img:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
 
-.blog-item .blog-body {
+.blog-item .blog-body,
+.blog-body {
   padding: 30px;
   position: relative;
 }
 
 .blog-item .blog-body .blog-author,
-.blog-item .blog-body .blog-date {
+.blog-author,
+.blog-item .blog-body .blog-date,
+.blog-date {
   color: #000;
   font-size: 0.92rem;
   font-weight: 500;
 }
 
 .blog-item .blog-body .blog-author:hover,
-.blog-item .blog-body .blog-date:hover {
+.blog-author:hover,
+.blog-item .blog-body .blog-date:hover,
+.blog-date:hover {
   color: var(--default-color);
 }
 
 .blog-item .blog-body .blog-author i,
-.blog-item .blog-body .blog-date i {
+.blog-author i,
+.blog-item .blog-body .blog-date i,
+.blog-date i {
   color: var(--default-color);
 }
 
-.blog-item .blog-body .blog-title {
+.blog-item .blog-body .blog-title,
+.blog-title {
   margin-bottom: 10px;
 }
 
-.blog-item .blog-body .blog-title a {
+.blog-item .blog-body .blog-title a,
+.blog-title a {
   color: #000;
 }
 
-.blog-item .blog-body .blog-title a:hover {
+.blog-item .blog-body .blog-title a:hover,
+.blog-title a:hover {
   color: var(--default-color);
 }
 
@@ -1907,7 +1931,7 @@ h1 .typed-cursor {
 }
 
 /* ---------------------------------------------------------------- */
-/* 19.Contact                            
+/* 19.Contact   
 /* ---------------------------------------------------------------- */
 .contact-content {
   padding: 30px;
@@ -1965,7 +1989,7 @@ h1 .typed-cursor {
 }
 
 /* ---------------------------------------------------------------- */
-/* 20.Footer                            
+/* 20.Footer   
 /* ---------------------------------------------------------------- */
 .footer {
   overflow: hidden;
@@ -2106,7 +2130,7 @@ h1 .typed-cursor {
 }
 
 /* ---------------------------------------------------------------- */
-/* 21.BreadCrumb                           
+/* 21.BreadCrumb  
 /* ---------------------------------------------------------------- */
 .breadcrumb-section {
   padding: 150px 0;
@@ -2172,7 +2196,7 @@ h1 .typed-cursor {
 }
 
 /* ---------------------------------------------------------------- */
-/* 22.Home Slider                            
+/* 22.Home Slider   
 /* ---------------------------------------------------------------- */
 .hero-slider-wrap .vegas-overlay {
   background: #050629;
@@ -2180,7 +2204,7 @@ h1 .typed-cursor {
 }
 
 /* ---------------------------------------------------------------- */
-/* 23.Home Page Youtube Video                              
+/* 23.Home Page Youtube Video
 /* ---------------------------------------------------------------- */
 .hero_video {
   width: 100%;
@@ -2212,7 +2236,7 @@ h1 .typed-cursor {
 }
 
 /* ---------------------------------------------------------------- */
-/* 24.Home Particles                          
+/* 24.Home Particles 
 /* ---------------------------------------------------------------- */
 #heroparticles {
   position: absolute;
@@ -2225,7 +2249,7 @@ h1 .typed-cursor {
 }
 
 /* ---------------------------------------------------------------- */
-/* 25.Home Glitch Img                            
+/* 25.Home Glitch Img   
 /* ---------------------------------------------------------------- */
 .glitch-img-banner .overlay-glitch {
   content: "";
@@ -2260,7 +2284,7 @@ h1 .typed-cursor {
 }
 
 /* ---------------------------------------------------------------- */
-/* 26.Portfolio Details                           
+/* 26.Portfolio Details  
 /* ---------------------------------------------------------------- */
 .portfolio-img-slider {
   top: 0;
@@ -2355,7 +2379,7 @@ h1 .typed-cursor {
 }
 
 /* ---------------------------------------------------------------- */
-/* 27.Blog Single                              
+/* 27.Blog Single
 /* ---------------------------------------------------------------- */
 .blog-post-single .blog-post-img {
   margin-bottom: 30px;
@@ -2562,7 +2586,7 @@ h1 .typed-cursor {
 }
 
 /* ---------------------------------------------------------------- */
-/* 28.Intro                              
+/* 28.Intro
 /* ---------------------------------------------------------------- */
 .hero-preview-banner {
   position: relative;
@@ -2700,6 +2724,74 @@ h1 .typed-cursor {
   animation: zoomIn 0.6s ease forwards;
 }
 
+.user {
+  font-size: 24px;
+  color: var(--default-color);
+  border: solid var(--default-color);
+  padding: 2px;
+  border-radius: 20%;
+  position: absolute;
+}
+
+.form-section {
+  background-color: var(--default-color);
+}
+
+
+.head-404,
+.form-login {
+  color: white;
+  border: dotted white;
+  background-color: var(--default-color);
+  padding: 30px 10px;
+  border-radius: 10px;
+}
+
+.user-pro {
+  font-size: 30px;
+  border-radius: 40%;
+  padding: 20px;
+  background-color: var(--default-color-blur);
+  border: dotted 5px;
+}
+
+.form-login {
+  transform: translateY(30%);
+}
+
+input {
+  border-radius: 3px;
+  border: currentColor;
+  padding: 5px 10px;
+  margin: 2px 0;
+
+}
+
+/* my project frameworks  */
+.bgColor {
+  background-color: var(--default-color);
+}
+
+.txtColor {
+  color: var(--default-color);
+}
+
+.bgBlurColor {
+  background-color: var(--default-color-blur);
+}
+
+.txtBlurColor {
+  color: var(--default-color-blur);
+}
+
+.bgHoverColor {
+  background-color: var(--default-hover-blur);
+}
+
+.txtHoverColor {
+  color: var(--default-hover-color);
+}
+
 /* ---------------------------------------------------------------- */
 /* Responsive Media Query
  * Extra small devices (portrait phones, less than 576px)
@@ -2713,5 +2805,3 @@ h1 .typed-cursor {
     font-size: 1rem;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

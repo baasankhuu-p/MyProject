@@ -7,8 +7,10 @@
     --default-font-famile: 'Source Sans Pro', sans-serif;
 } */
 
+
 :root {
     --default-color: #ad20ff;
+    --default-color-blur: #9562b3;
     --default-hover-color: #8c21cb;
     --default-scroll-color: #a000ff;
     --default-background-color: rgba(160, 0, 255, 0.1);

@@ -53,10 +53,10 @@ $(document).ready(function () {
                 e.keyCode === 115 ||
                 e.keyCode === 19 ||
                 e.keyCode === 117)) {
-            alert('Уучлаарай боломжгүй');
-            return false;
-        } else {
+            alert('♥♥♥');
             return true;
+        } else {
+            return false;
         }
     };
 
@@ -437,7 +437,10 @@ function fotor_contactForm() {
 
         function validatePhone(phone) {
             var regexp = '';
-            return false;
+            if (regexp) {
+                //return regexp.test(String(phone));
+                return true
+            }
         }
         //  Variables 
         var $this = $(this),
@@ -494,9 +497,6 @@ function fotor_contactForm() {
         }
         event.preventDefault();
     });
-}
-function toggleLike() {
-    /**Like Count set */
 }
 function SendRequest(name, email) {
     alert(`Сайн уу ${name}. Бид таны мэдээлэлтэй танилцаж удахгүй ${email} имейл-рүү хариу илгээх болно`);

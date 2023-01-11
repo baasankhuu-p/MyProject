@@ -1,20 +1,5 @@
-/*
-    01) Bootstrap
-	02) Magnific Popup
-	03) Animate Css
-	04) Material Design Icons
-	05) Owl Carousel
-	06) Owl Carousel Default
-	07) Vegas Slider
-*/
-
-/*------------------------------------------------------------------*/
-/*	01) Bootstrap
-/*------------------------------------------------------------------*/
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
@@ -523,7 +508,7 @@ mark {
 .img-fluid {
 	width: 100%;
 	max-width: 100%;
-	height: auto
+	height: 50px
 }
 
 .img-thumbnail {
