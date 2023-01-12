@@ -1,25 +1,4 @@
-/* ------------------------------------------------------------------------------
- *
- *  # Template JS core
- *
- *  Includes minimum required JS code for proper template functioning
- *
- * ---------------------------------------------------------------------------- */
-
-
-// Setup module
-// ------------------------------
-
 var App = function () {
-
-
-    //
-    // Setup module components
-    //
-
-    // Transitions
-    // -------------------------
-
     // Disable all transitions
     var _transitionsDisabled = function() {
         $('body').addClass('no-transitions');
@@ -30,11 +9,6 @@ var App = function () {
         $('body').removeClass('no-transitions');
     };
 
-
-    // Sidebars
-    // -------------------------
-
-    //
     // On desktop
     //
 

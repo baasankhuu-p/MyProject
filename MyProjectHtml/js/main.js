@@ -45,21 +45,6 @@ $(document).ready(function () {
             return false;
     });
 
-    document.onkeydown = function (e) {
-        if (e.ctrlKey &&
-            (e.keyCode === 67 ||
-                e.keyCode === 86 ||
-                e.keyCode === 85 ||
-                e.keyCode === 115 ||
-                e.keyCode === 19 ||
-                e.keyCode === 117)) {
-            alert('♥♥♥');
-            return true;
-        } else {
-            return false;
-        }
-    };
-
 });
 
 /*  ---------------------------------------------------
