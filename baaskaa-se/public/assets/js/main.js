@@ -483,10 +483,3 @@ function fotor_contactForm() {
         event.preventDefault();
     });
 }
-var options = {
-    strings: ["Developer", "UI Designer", "FrondEnd", "BackEnd"],
-    typeSpeed: 40,
-    backSpeed: 40,
-    loop: true,
-  };
-  var typed = new Typed("#typed-text", options);

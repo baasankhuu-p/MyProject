@@ -200,8 +200,11 @@ p {
   overflow: hidden;
   position: relative;
 }
-
+.drift-frame-controller{
+  
+}
 .section {
+  scroll-behavior: smooth;
   padding: 100px 0;
   overflow: hidden;
   position: relative;
@@ -2805,4 +2808,9 @@ input {
   .hero-preview-banner .preview-banner-subtitle {
     font-size: 1rem;
   }
+}
+
+/*Service css*/
+.service-item{
+  cursor: pointer;
 }

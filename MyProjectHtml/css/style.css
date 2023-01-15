@@ -2806,3 +2806,6 @@ input {
     font-size: 1rem;
   }
 }
+.drift-widget-chat-bottom .drift-widget-footer{
+  opacity: 0 !important;
+}

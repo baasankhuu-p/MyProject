@@ -1,0 +1,14 @@
+.BlackBG{
+    background-color: #000;
+    color: #fff
+}
+.WhiteBg{
+    background-color: #fff;
+    color: #000
+}
+.BlackTxt{
+    color: #000 !important
+}
+.WhiteTxt{
+    color: #fff !important
+}
